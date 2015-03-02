@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B360D2921AA4007E00F6E05B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2911AA4007E00F6E05B /* main.m */; };
+		B360D2951AA4007E00F6E05B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2941AA4007E00F6E05B /* AppDelegate.m */; };
+		B360D2981AA4007E00F6E05B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2971AA4007E00F6E05B /* ViewController.m */; };
+		B360D29B1AA4007E00F6E05B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B360D2991AA4007E00F6E05B /* Main.storyboard */; };
+		B360D29D1AA4007E00F6E05B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B360D29C1AA4007E00F6E05B /* Images.xcassets */; };
+		B360D2A01AA4007E00F6E05B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B360D29E1AA4007E00F6E05B /* LaunchScreen.xib */; };
+		B360D2AC1AA4007E00F6E05B /* Simple_SharingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2AB1AA4007E00F6E05B /* Simple_SharingTests.m */; };
+		B360D2BB1AA4059B00F6E05B /* SimpleSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2BA1AA4059B00F6E05B /* SimpleSharer.m */; };
+		B360D2BD1AA405C100F6E05B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B360D2BC1AA405C100F6E05B /* ViewController.xib */; };
+		B360D2C01AA4074300F6E05B /* SharingChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2BF1AA4074300F6E05B /* SharingChannel.m */; };
+		B360D2CA1AA407BF00F6E05B /* EmailChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2C91AA407BF00F6E05B /* EmailChannel.m */; };
+		B360D2CD1AA407F700F6E05B /* SMSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2CC1AA407F700F6E05B /* SMSChannel.m */; };
+		B360D2D31AA4113A00F6E05B /* SharingDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2D21AA4113A00F6E05B /* SharingDataWrapper.m */; };
+		B360D2D61AA4148000F6E05B /* TwitterChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2D51AA4148000F6E05B /* TwitterChannel.m */; };
+		B360D2D81AA414EF00F6E05B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B360D2D71AA414EF00F6E05B /* Social.framework */; };
+		B360D2DC1AA41A7500F6E05B /* FacebookChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2DB1AA41A7500F6E05B /* FacebookChannel.m */; };
+		B360D2DF1AA41C6E00F6E05B /* SocialFrameworkChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2DE1AA41C6E00F6E05B /* SocialFrameworkChannel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B360D2A61AA4007E00F6E05B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B360D2841AA4007E00F6E05B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B360D28B1AA4007E00F6E05B;
+			remoteInfo = "Simple Sharing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B360D28C1AA4007E00F6E05B /* Simple Sharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Sharing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B360D2901AA4007E00F6E05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B360D2911AA4007E00F6E05B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B360D2931AA4007E00F6E05B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B360D2941AA4007E00F6E05B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B360D2961AA4007E00F6E05B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B360D2971AA4007E00F6E05B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B360D29A1AA4007E00F6E05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B360D29C1AA4007E00F6E05B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B360D29F1AA4007E00F6E05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B360D2A51AA4007E00F6E05B /* Simple SharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple SharingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B360D2AA1AA4007E00F6E05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B360D2AB1AA4007E00F6E05B /* Simple_SharingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_SharingTests.m; sourceTree = "<group>"; };
+		B360D2B91AA4059B00F6E05B /* SimpleSharer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSharer.h; sourceTree = "<group>"; };
+		B360D2BA1AA4059B00F6E05B /* SimpleSharer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSharer.m; sourceTree = "<group>"; };
+		B360D2BC1AA405C100F6E05B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		B360D2BE1AA4074300F6E05B /* SharingChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingChannel.h; sourceTree = "<group>"; };
+		B360D2BF1AA4074300F6E05B /* SharingChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingChannel.m; sourceTree = "<group>"; };
+		B360D2C81AA407BF00F6E05B /* EmailChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailChannel.h; sourceTree = "<group>"; };
+		B360D2C91AA407BF00F6E05B /* EmailChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailChannel.m; sourceTree = "<group>"; };
+		B360D2CB1AA407F700F6E05B /* SMSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSChannel.h; sourceTree = "<group>"; };
+		B360D2CC1AA407F700F6E05B /* SMSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSChannel.m; sourceTree = "<group>"; };
+		B360D2D11AA4113A00F6E05B /* SharingDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingDataWrapper.h; sourceTree = "<group>"; };
+		B360D2D21AA4113A00F6E05B /* SharingDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingDataWrapper.m; sourceTree = "<group>"; };
+		B360D2D41AA4148000F6E05B /* TwitterChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterChannel.h; sourceTree = "<group>"; };
+		B360D2D51AA4148000F6E05B /* TwitterChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterChannel.m; sourceTree = "<group>"; };
+		B360D2D71AA414EF00F6E05B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B360D2DA1AA41A7500F6E05B /* FacebookChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookChannel.h; sourceTree = "<group>"; };
+		B360D2DB1AA41A7500F6E05B /* FacebookChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookChannel.m; sourceTree = "<group>"; };
+		B360D2DD1AA41C6E00F6E05B /* SocialFrameworkChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFrameworkChannel.h; sourceTree = "<group>"; };
+		B360D2DE1AA41C6E00F6E05B /* SocialFrameworkChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFrameworkChannel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B360D2891AA4007E00F6E05B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B360D2D81AA414EF00F6E05B /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B360D2A21AA4007E00F6E05B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B360D2831AA4007E00F6E05B = {
+			isa = PBXGroup;
+			children = (
+				B360D28E1AA4007E00F6E05B /* Simple Sharing */,
+				B360D2A81AA4007E00F6E05B /* Simple SharingTests */,
+				B360D28D1AA4007E00F6E05B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B360D28D1AA4007E00F6E05B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B360D28C1AA4007E00F6E05B /* Simple Sharing.app */,
+				B360D2A51AA4007E00F6E05B /* Simple SharingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B360D28E1AA4007E00F6E05B /* Simple Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2D91AA4150B00F6E05B /* Frameworks */,
+				B360D2B81AA4057A00F6E05B /* Simple Sharer */,
+				B360D2931AA4007E00F6E05B /* AppDelegate.h */,
+				B360D2941AA4007E00F6E05B /* AppDelegate.m */,
+				B360D2961AA4007E00F6E05B /* ViewController.h */,
+				B360D2971AA4007E00F6E05B /* ViewController.m */,
+				B360D2BC1AA405C100F6E05B /* ViewController.xib */,
+				B360D2991AA4007E00F6E05B /* Main.storyboard */,
+				B360D29C1AA4007E00F6E05B /* Images.xcassets */,
+				B360D29E1AA4007E00F6E05B /* LaunchScreen.xib */,
+				B360D28F1AA4007E00F6E05B /* Supporting Files */,
+			);
+			path = "Simple Sharing";
+			sourceTree = "<group>";
+		};
+		B360D28F1AA4007E00F6E05B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2901AA4007E00F6E05B /* Info.plist */,
+				B360D2911AA4007E00F6E05B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B360D2A81AA4007E00F6E05B /* Simple SharingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2AB1AA4007E00F6E05B /* Simple_SharingTests.m */,
+				B360D2A91AA4007E00F6E05B /* Supporting Files */,
+			);
+			path = "Simple SharingTests";
+			sourceTree = "<group>";
+		};
+		B360D2A91AA4007E00F6E05B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2AA1AA4007E00F6E05B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B360D2B81AA4057A00F6E05B /* Simple Sharer */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2C41AA4077B00F6E05B /* Channels */,
+				B360D2B91AA4059B00F6E05B /* SimpleSharer.h */,
+				B360D2BA1AA4059B00F6E05B /* SimpleSharer.m */,
+				B360D2BE1AA4074300F6E05B /* SharingChannel.h */,
+				B360D2BF1AA4074300F6E05B /* SharingChannel.m */,
+				B360D2D11AA4113A00F6E05B /* SharingDataWrapper.h */,
+				B360D2D21AA4113A00F6E05B /* SharingDataWrapper.m */,
+			);
+			name = "Simple Sharer";
+			path = "../../Simple Sharer";
+			sourceTree = "<group>";
+		};
+		B360D2C41AA4077B00F6E05B /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2C81AA407BF00F6E05B /* EmailChannel.h */,
+				B360D2C91AA407BF00F6E05B /* EmailChannel.m */,
+				B360D2CB1AA407F700F6E05B /* SMSChannel.h */,
+				B360D2CC1AA407F700F6E05B /* SMSChannel.m */,
+				B360D2D41AA4148000F6E05B /* TwitterChannel.h */,
+				B360D2D51AA4148000F6E05B /* TwitterChannel.m */,
+				B360D2DA1AA41A7500F6E05B /* FacebookChannel.h */,
+				B360D2DB1AA41A7500F6E05B /* FacebookChannel.m */,
+				B360D2DD1AA41C6E00F6E05B /* SocialFrameworkChannel.h */,
+				B360D2DE1AA41C6E00F6E05B /* SocialFrameworkChannel.m */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		B360D2D91AA4150B00F6E05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B360D2D71AA414EF00F6E05B /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B360D28B1AA4007E00F6E05B /* Simple Sharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B360D2AF1AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple Sharing" */;
+			buildPhases = (
+				B360D2881AA4007E00F6E05B /* Sources */,
+				B360D2891AA4007E00F6E05B /* Frameworks */,
+				B360D28A1AA4007E00F6E05B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Sharing";
+			productName = "Simple Sharing";
+			productReference = B360D28C1AA4007E00F6E05B /* Simple Sharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B360D2A41AA4007E00F6E05B /* Simple SharingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B360D2B21AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple SharingTests" */;
+			buildPhases = (
+				B360D2A11AA4007E00F6E05B /* Sources */,
+				B360D2A21AA4007E00F6E05B /* Frameworks */,
+				B360D2A31AA4007E00F6E05B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B360D2A71AA4007E00F6E05B /* PBXTargetDependency */,
+			);
+			name = "Simple SharingTests";
+			productName = "Simple SharingTests";
+			productReference = B360D2A51AA4007E00F6E05B /* Simple SharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B360D2841AA4007E00F6E05B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Leo Angelo Quigao";
+				TargetAttributes = {
+					B360D28B1AA4007E00F6E05B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B360D2A41AA4007E00F6E05B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B360D28B1AA4007E00F6E05B;
+					};
+				};
+			};
+			buildConfigurationList = B360D2871AA4007E00F6E05B /* Build configuration list for PBXProject "Simple Sharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B360D2831AA4007E00F6E05B;
+			productRefGroup = B360D28D1AA4007E00F6E05B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B360D28B1AA4007E00F6E05B /* Simple Sharing */,
+				B360D2A41AA4007E00F6E05B /* Simple SharingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B360D28A1AA4007E00F6E05B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B360D29B1AA4007E00F6E05B /* Main.storyboard in Resources */,
+				B360D2A01AA4007E00F6E05B /* LaunchScreen.xib in Resources */,
+				B360D2BD1AA405C100F6E05B /* ViewController.xib in Resources */,
+				B360D29D1AA4007E00F6E05B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B360D2A31AA4007E00F6E05B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B360D2881AA4007E00F6E05B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B360D2CA1AA407BF00F6E05B /* EmailChannel.m in Sources */,
+				B360D2BB1AA4059B00F6E05B /* SimpleSharer.m in Sources */,
+				B360D2981AA4007E00F6E05B /* ViewController.m in Sources */,
+				B360D2DF1AA41C6E00F6E05B /* SocialFrameworkChannel.m in Sources */,
+				B360D2DC1AA41A7500F6E05B /* FacebookChannel.m in Sources */,
+				B360D2951AA4007E00F6E05B /* AppDelegate.m in Sources */,
+				B360D2D61AA4148000F6E05B /* TwitterChannel.m in Sources */,
+				B360D2CD1AA407F700F6E05B /* SMSChannel.m in Sources */,
+				B360D2C01AA4074300F6E05B /* SharingChannel.m in Sources */,
+				B360D2D31AA4113A00F6E05B /* SharingDataWrapper.m in Sources */,
+				B360D2921AA4007E00F6E05B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B360D2A11AA4007E00F6E05B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B360D2AC1AA4007E00F6E05B /* Simple_SharingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B360D2A71AA4007E00F6E05B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B360D28B1AA4007E00F6E05B /* Simple Sharing */;
+			targetProxy = B360D2A61AA4007E00F6E05B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B360D2991AA4007E00F6E05B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B360D29A1AA4007E00F6E05B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B360D29E1AA4007E00F6E05B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B360D29F1AA4007E00F6E05B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B360D2AD1AA4007E00F6E05B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B360D2AE1AA4007E00F6E05B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B360D2B01AA4007E00F6E05B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Simple Sharing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B360D2B11AA4007E00F6E05B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Simple Sharing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B360D2B31AA4007E00F6E05B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple SharingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Sharing.app/Simple Sharing";
+			};
+			name = Debug;
+		};
+		B360D2B41AA4007E00F6E05B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple SharingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Sharing.app/Simple Sharing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B360D2871AA4007E00F6E05B /* Build configuration list for PBXProject "Simple Sharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B360D2AD1AA4007E00F6E05B /* Debug */,
+				B360D2AE1AA4007E00F6E05B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B360D2AF1AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple Sharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B360D2B01AA4007E00F6E05B /* Debug */,
+				B360D2B11AA4007E00F6E05B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B360D2B21AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple SharingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B360D2B31AA4007E00F6E05B /* Debug */,
+				B360D2B41AA4007E00F6E05B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B360D2841AA4007E00F6E05B /* Project object */;
+}
