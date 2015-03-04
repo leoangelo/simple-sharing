@@ -8,6 +8,6 @@
 
 #import "SocialFrameworkChannel.h"
 
-@interface FacebookChannel : SocialFrameworkChannel
+@interface FacebookChannel : SharingChannel
 
 @end

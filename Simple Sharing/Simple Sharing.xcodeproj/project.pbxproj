@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6229112A38DC306F86D472C8 /* libPods-Simple Sharing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC11B81E89330E4805F3C /* libPods-Simple Sharing.a */; };
+		B315D1141AA5649400C1845D /* FacebookIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = B315D1131AA5649400C1845D /* FacebookIntegration.m */; };
 		B360D2921AA4007E00F6E05B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2911AA4007E00F6E05B /* main.m */; };
 		B360D2951AA4007E00F6E05B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2941AA4007E00F6E05B /* AppDelegate.m */; };
 		B360D2981AA4007E00F6E05B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B360D2971AA4007E00F6E05B /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2428110ADEAF583273CDF477 /* Pods-Simple Sharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Sharing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Sharing/Pods-Simple Sharing.debug.xcconfig"; sourceTree = "<group>"; };
+		492921B61C63062A7E28DBD5 /* Pods-Simple Sharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Sharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Sharing/Pods-Simple Sharing.release.xcconfig"; sourceTree = "<group>"; };
+		B315D1121AA5649400C1845D /* FacebookIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookIntegration.h; sourceTree = "<group>"; };
+		B315D1131AA5649400C1845D /* FacebookIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookIntegration.m; sourceTree = "<group>"; };
 		B360D28C1AA4007E00F6E05B /* Simple Sharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Sharing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B360D2901AA4007E00F6E05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B360D2911AA4007E00F6E05B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		B360D2DB1AA41A7500F6E05B /* FacebookChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookChannel.m; sourceTree = "<group>"; };
 		B360D2DD1AA41C6E00F6E05B /* SocialFrameworkChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFrameworkChannel.h; sourceTree = "<group>"; };
 		B360D2DE1AA41C6E00F6E05B /* SocialFrameworkChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFrameworkChannel.m; sourceTree = "<group>"; };
+		F2FAC11B81E89330E4805F3C /* libPods-Simple Sharing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Sharing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B360D2D81AA414EF00F6E05B /* Social.framework in Frameworks */,
+				6229112A38DC306F86D472C8 /* libPods-Simple Sharing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EA6C7901E144794252AC8FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC11B81E89330E4805F3C /* libPods-Simple Sharing.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10208A03F13D76AB18EDEBED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2428110ADEAF583273CDF477 /* Pods-Simple Sharing.debug.xcconfig */,
+				492921B61C63062A7E28DBD5 /* Pods-Simple Sharing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B360D2831AA4007E00F6E05B = {
 			isa = PBXGroup;
 			children = (
 				B360D28E1AA4007E00F6E05B /* Simple Sharing */,
 				B360D2A81AA4007E00F6E05B /* Simple SharingTests */,
 				B360D28D1AA4007E00F6E05B /* Products */,
+				10208A03F13D76AB18EDEBED /* Pods */,
+				0EA6C7901E144794252AC8FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +148,8 @@
 				B360D29C1AA4007E00F6E05B /* Images.xcassets */,
 				B360D29E1AA4007E00F6E05B /* LaunchScreen.xib */,
 				B360D28F1AA4007E00F6E05B /* Supporting Files */,
+				B315D1121AA5649400C1845D /* FacebookIntegration.h */,
+				B315D1131AA5649400C1845D /* FacebookIntegration.m */,
 			);
 			path = "Simple Sharing";
 			sourceTree = "<group>";
@@ -198,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B360D2AF1AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple Sharing" */;
 			buildPhases = (
+				5E96833EE7E400924C6F4B37 /* Check Pods Manifest.lock */,
 				B360D2881AA4007E00F6E05B /* Sources */,
 				B360D2891AA4007E00F6E05B /* Frameworks */,
 				B360D28A1AA4007E00F6E05B /* Resources */,
+				BE0C775374654E0C33F362F5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +318,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E96833EE7E400924C6F4B37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0C775374654E0C33F362F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simple Sharing/Pods-Simple Sharing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B360D2881AA4007E00F6E05B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,6 +358,7 @@
 			files = (
 				B360D2CA1AA407BF00F6E05B /* EmailChannel.m in Sources */,
 				B360D2BB1AA4059B00F6E05B /* SimpleSharer.m in Sources */,
+				B315D1141AA5649400C1845D /* FacebookIntegration.m in Sources */,
 				B360D2981AA4007E00F6E05B /* ViewController.m in Sources */,
 				B360D2DF1AA41C6E00F6E05B /* SocialFrameworkChannel.m in Sources */,
 				B360D2DC1AA41A7500F6E05B /* FacebookChannel.m in Sources */,
@@ -422,6 +487,7 @@
 		};
 		B360D2B01AA4007E00F6E05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2428110ADEAF583273CDF477 /* Pods-Simple Sharing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Simple Sharing/Info.plist";
@@ -432,6 +498,7 @@
 		};
 		B360D2B11AA4007E00F6E05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 492921B61C63062A7E28DBD5 /* Pods-Simple Sharing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Simple Sharing/Info.plist";
@@ -493,6 +560,7 @@
 				B360D2B11AA4007E00F6E05B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B360D2B21AA4007E00F6E05B /* Build configuration list for PBXNativeTarget "Simple SharingTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +569,7 @@
 				B360D2B41AA4007E00F6E05B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
